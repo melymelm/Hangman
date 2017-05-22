@@ -1,0 +1,46 @@
+/* FONTS TO USE */
+/*font-family: 'Creepster', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Francois One', sans-serif;*/
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1100px;
+	background-color: #000000;
+}
+
+.header{
+	background-color: #000000;
+	font-family: 'Francois One', sans-serif;
+	color: #ffffff;
+}
+
+#info {
+	color: #000000;
+}
+
+
+#header_section {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;	
+	margin-right: 20px;
+}
+
+.main_logo {
+	width: 500px;
+/*	height: auto;*/
+	max-width: 100%;
+}
+
+#photoBand {
+/*	margin-left: 10px;*/
+	margin-bottom: 50px;
+}
+
+
+
+

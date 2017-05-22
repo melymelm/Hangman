@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman: Punk Edition</title>
+
+	<!--Link Bootstrap's JavaScript to jQuery-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://use.fontawesome.com/c606ab7025.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Anton|Creepster|Francois+One" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="header">
+		<h1><img src="assets/images/hangman_logo.jpg" class="main_logo"></h1>
+		<hr>
+  		<p><h3>Press any key to get started!</h3></p>
+  		<p><h3>Your hint: 70's punk bands</h3></p>
+	</div>
+	
+
+		<div class="row" id="photoBand" align="center">
+			<img src="./assets/images/grandma_punk.jpg" alt="punk grandma">
+		</div>
+		<div class="row" id="vidBand"></div>
+
+
+	<div class="row" id="info">
+			<div class="col-md-6">
+				<ul class="list-group">
+					<li class="list-group-item" id="wins">
+					    Wins: 
+					</li>
+					<li class="list-group-item" id="losses">
+					    Losses: 
+					</li>
+					<li class="list-group-item" id="guessesLeft">
+					    Number of Guesses Remaining:
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-6">
+				<div class="panel panel-default" id="lettGuess">
+				  	<div class="panel-heading">Current Word:</div>
+				  	<div class="panel-body">
+				  	<h3 id="wordGuessSlot">
+				  	_ _ _ _ _ _ _ _ _</h3>
+				  	</div>
+				</div>
+
+				<div class="panel panel-default" id="lettGuess">
+				  	<div class="panel-heading">Letters Already Guessed:</div>
+				  	<div class="panel-body">
+				  	<h3 id="letterGuessSlot">
+				  	_ _ _ _ _ _ _ _ _</h3>
+				  	</div>
+				</div>
+			</div>
+	</div> <!--  end row info div  -->
+
+
+
+</div>
+
+<script src="game.js"></script>
+	
+</body>
+</html>
